@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Витольд Демишкевич](https://up.htmlacademy.ru/adaptive/10/user/34217).
-* Наставник: `Неизвестно`.
+* Наставник: [Денис Байдаров](https://github.com/4err).
 
 ---
 
