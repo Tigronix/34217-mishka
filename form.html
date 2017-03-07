@@ -6,7 +6,7 @@
   </head>
   <body>
 		<header class="page-header">
-			<a href="#" class="logo"><img src="http://placehold.it/86x35" alt=""></a>
+			<a href="index.html" class="logo"><img src="http://placehold.it/86x35" alt=""></a>
 			<nav class="nav">
 				<ul>
 					<li class="nav__link"><a href="#">Каталог товаров</a></li>
@@ -14,81 +14,85 @@
 					<li class="nav__link"><a href="#">Поиск по сайту</a></li>
 					<li class="nav__link"><a href="#">Корзина: пока пуста</a></li>
 				</ul>
+				<button class="nav__button"></button>
 			</nav>
 		</header><!--header-->
 		<main class="main">
 			<div class="static-title">
-				<h1 class="static-title__h1 h1">Вязание на заказ</h1>
+				<h1 class="static-title__h1">Вязание на заказ</h1>
 			</div><!--static-title-->
-			<p>Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+			<p class="static__p">
+				Мы будем рады воплотить в жизнь ваши пожелания!
+				Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+			</p>
 			<form action="https://echo.htmlacademy.ru/" class="form">
 				<div class="form__title">Тип</div>
 				<div class="form__inpbox">
-					<input name="type" id="acc" type="radio">
-					<label for="acc">Аксессуар для интерьера</label>
+					<input class="form__input" name="type" id="acc" type="radio">
+					<label class="form__label" for="acc">Аксессуар для интерьера</label>
 				</div>
 				<div class="form__inpbox">
-					<input name="type" id="toy" type="radio">
-					<label for="toy">Детская игрушка</label>
+					<input class="form__input" name="type" id="toy" type="radio">
+					<label class="form__label" for="toy">Детская игрушка</label>
 				</div>
 				<div class="form__title">Цвет</div>
 				<div class="form__inpbox">
-					<input name="color" id="white" type="checkbox">
-					<label for="white">Белый</label>
+					<input class="form__input" name="color" id="white" type="checkbox">
+					<label class="form__label" for="white">Белый</label>
 				</div>
 				<div class="form__inpbox">
-					<input name="color" id="grey" type="checkbox">
-					<label for="grey">Серый</label>
+					<input class="form__input" name="color" id="grey" type="checkbox">
+					<label class="form__label" for="grey">Серый</label>
 				</div>
 				<div class="form__inpbox">
-					<input name="color" id="tiffany" type="checkbox">
-					<label for="tiffany">«Тиффани»</label>
+					<input class="form__input" name="color" id="tiffany" type="checkbox">
+					<label class="form__label" for="tiffany">«Тиффани»</label>
 				</div>
 				<div class="form__inpbox">
-					<input name="color" id="black" type="checkbox">
-					<label for="black">Черный</label>
+					<input class="form__input" name="color" id="black" type="checkbox">
+					<label class="form__label" for="black">Черный</label>
 				</div>
 				<div class="form__inpbox">
-					<input name="color" id="pink" type="checkbox">
-					<label for="pink">Розовый</label>
+					<input class="form__input" name="color" id="pink" type="checkbox">
+					<label class="form__label" for="pink">Розовый</label>
 				</div>
 				<div class="form__inpbox">
-					<input name="color" id="orange" type="checkbox">
-					<label for="orange">Оранжевый</label>
+					<input class="form__input" name="color" id="orange" type="checkbox">
+					<label class="form__label" for="orange">Оранжевый</label>
 				</div>
 				<div class="form__title">ФИО</div>
 				<div class="form__inpbox">
-					<label for="name">Имя:</label>
-					<input required placeholder="Введите ваше имя*" id="name" type="text">
+					<label class="form__label" for="name">Имя:</label>
+					<input class="form__input" required placeholder="Введите ваше имя*" id="name" type="text">
 				</div>
 				<div class="form__inpbox">
-					<label for="second-name">Фамилия:</label>
-					<input required placeholder="Укажите фамилию*" id="second-name" type="text">
+					<label class="form__label" for="second-name">Фамилия:</label>
+					<input class="form__input" required placeholder="Укажите фамилию*" id="second-name" type="text">
 				</div>
 				<div class="form__inpbox">
-					<label for="patronymic">Отчество:</label>
-					<input placeholder="Отчество, если желаете" id="patronymic" type="text">
+					<label class="form__label" for="patronymic">Отчество:</label>
+					<input class="form__input" placeholder="Отчество, если желаете" id="patronymic" type="text">
 				</div>
 				<div class="form__inpbox">
-					<input required pattern="+7-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="+7 ХХХ ХХ ХХ*" id="tel" type="tel" title="Ошибка! Пример ввода: +7 906 22 43">
+					<input class="form__input" required pattern="+7-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="+7 ХХХ ХХ ХХ*" id="tel" type="tel" title="Ошибка! Пример ввода: +7 906 22 43">
 				</div>
 				<div class="form__title">E-MAIL</div>
 				<div class="form__inpbox">
-					<input placeholder="Ваш Email*" type="email" required>
+					<input class="form__input" placeholder="Ваш Email*" type="email" required>
 				</div>
 				<div class="form__title">Доп</div>
 				<div class="form__inpbox">
 					<textarea class="form__textarea" placeholder="Опишите все ваши пожелания к заказу"></textarea>
 				</div>
 				<p class="form__tip"><sup>*</sup>Поля обязательные для заполнения</p>
-				<button class="form__submit btn">Отправить</button>
+				<button type="submit" class="form__submit btn">Отправить</button>
 			</form><!--form-->
 		</main><!--main-->
 		<footer class="page-footer">
 			<div class="footer__social social">
-				<i class="icon-instagram"><img src="http://placehold.it/22x21" alt=""></i>
-				<i class="icon-facebook"><img src="http://placehold.it/15x29" alt=""></i>
-				<i class="icon-twitter"><img src="http://placehold.it/24x20" alt=""></i>
+				<a href="#" class="icon-instagram"><img src="http://placehold.it/22x21" alt=""></a>
+				<a href="#" class="icon-facebook"><img src="http://placehold.it/15x29" alt=""></a>
+				<a href="#" class="icon-twitter"><img src="http://placehold.it/24x20" alt=""></a>
 			</div><!--social-->
 			<div class="footer__by">
 				<a href="#">Разработано <img src="http://placehold.it/27x34" alt=""></a>
